@@ -30,7 +30,7 @@ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 // Bail on direct access
 defined('WPINC') or die;
 
-class Scheduled_Post_Guardian_Plugin extends WP_Stack_Plugin {
+class Scheduled_Post_Guardian_Plugin {
 	public static $instance;
 	const OPTION = 'scheduled_post_guardian_next_run';
 	const DELAY = 3; // Default is to check the future posts once every 3 minutes
