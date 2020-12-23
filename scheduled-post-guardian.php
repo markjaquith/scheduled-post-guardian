@@ -4,13 +4,13 @@ Plugin Name: Scheduled Post Guardian
 Description: Watches over scheduled posts, so that no funny business interferes with their mission
 Version: 1.0.1
 License: GPLv2+
-Plugin URI: http://github.com/markjaquith/scheduled-post-guardian
+Plugin URI: https://github.com/markjaquith/scheduled-post-guardian
 Author: Mark Jaquith
-Author URI: http://coveredwebservices.com/
+Author URI: https://coveredweb.com/
 
 ==========================================================================
 
-Copyright 2014  Mark Jaquith
+Copyright 2014–2020  Mark Jaquith
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
