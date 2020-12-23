@@ -5,7 +5,7 @@ Donate link: http://txfx.net/wordpress-plugins/donate
 Tags: future posts, scheduled posts, cron, nui  
 Requires at least: 3.8  
 Tested up to: 5.6  
-Stable tag: 1.0.1  
+Stable tag: 1.0.2  
 
 Watches over scheduled posts, and makes sure they don't miss their scheduled time
 
