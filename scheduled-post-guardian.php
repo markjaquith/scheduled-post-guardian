@@ -86,7 +86,8 @@ class Scheduled_Post_Guardian_Plugin {
 	}
 
 	public function run_on_edit_dot_php( $run ) {
-		if ( ! $run && is_admin() && 'edit' === get_current_screen()->base ) {
+		if ( ! $run && is_admin() && function_exists('get_current_screen') &&
+			get_current_screen() !== null && 'edit' === get_current_screen()->base ) {
 			return true;
 		}
 		return $run;
