@@ -2,10 +2,10 @@
 
 Contributors: markjaquith  
 Donate link: http://txfx.net/wordpress-plugins/donate  
-Tags: future posts, scheduled posts, cron, nui  
+Tags: future posts, scheduled posts, cron  
 Requires at least: 3.8  
-Tested up to: 5.6  
-Stable tag: 1.0.2  
+Tested up to: 5.8  
+Stable tag: 1.1.0  
 
 Watches over scheduled posts, and makes sure they don't miss their scheduled time
 
@@ -23,7 +23,7 @@ Some WordPress sites have problems with scheduled posts, where they don't get pu
 
 ### How does it work? ###
 
-On "shutdown" (after WP finishes a request), it checks a timer. If it has been 3 minutes since it last checked, it looks at all the scheduled posts, and runs them through a WordPress core function that either publishes them (if they should have gone out already), or re-schedules them, if their schedule (their "cron" entry) has somehow gone away.
+On "shutdown" (after WP finishes a request), it checks a timer. If it has been 3 minutes since it last checked, it looks at all the scheduled posts, and runs them through a WordPress core function that either publishes them (if they should have gone out already), or re-schedules them, if their schedule has somehow gone away.
 
 ### My post missed its schedule anyway! ###
 
@@ -34,6 +34,10 @@ Normally, the plugin checks every 3 minutes. So it's possible the post might go 
 Yes. There are filters: `scheduled_post_guardian_delay_minutes` and `scheduled_post_guardian_stretch_delay_minutes`. Return a different number than 3 and 15 for those if you like.
 
 ## Changelog ##
+
+### 1.1.0 ###
+
+* Cleaned up code, bumped PHP version requirement.
 
 ### 1.0.1 ###
 
