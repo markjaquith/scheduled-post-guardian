@@ -2,7 +2,7 @@
 /*
 Plugin Name: Scheduled Post Guardian
 Description: Watches over scheduled posts, so that no funny business interferes with their mission
-Version: 1.1.0
+Version: 1.1.1
 License: GPLv2+
 Plugin URI: https://github.com/markjaquith/scheduled-post-guardian
 Author: Mark Jaquith
@@ -43,7 +43,7 @@ class Plugin {
 		self::$instance = $this;
 	}
 
-	public function boot() {
+	public static function boot() {
 		$plugin = new static;
 
 		// This uses 'shutdown' instead of WP Cron, because some people having future post issues
