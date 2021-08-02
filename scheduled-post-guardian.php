@@ -93,7 +93,9 @@ class Plugin {
 	}
 
 	public function run_on_edit_dot_php($run) {
-		if (!$run && is_admin() && 'edit' === get_current_screen()->base) {
+		$screen = get_current_screen();
+
+		if (!$run && is_admin() && $screen && 'edit' === $screen->base) {
 			return true;
 		}
 
