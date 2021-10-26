@@ -2,7 +2,7 @@
 /*
 Plugin Name: Scheduled Post Guardian
 Description: Watches over scheduled posts, so that no funny business interferes with their mission
-Version: 1.1.2
+Version: 1.1.3
 License: GPLv2+
 Plugin URI: https://github.com/markjaquith/scheduled-post-guardian
 Author: Mark Jaquith
@@ -93,7 +93,7 @@ class Plugin {
 	}
 
 	public function run_on_edit_dot_php($run) {
-		if (!$run && \is_admin()) {
+		if (!$run && \is_admin() && function_exists('get_current_screen')) {
 			$screen = \get_current_screen();
 
 			if ($screen && 'edit' === $screen->base) {

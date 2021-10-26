@@ -5,7 +5,7 @@ Donate link: http://txfx.net/wordpress-plugins/donate
 Tags: future posts, scheduled posts, cron  
 Requires at least: 3.8  
 Tested up to: 5.8  
-Stable tag: 1.1.2  
+Stable tag: 1.1.3  
 
 Watches over scheduled posts, and makes sure they don't miss their scheduled time
 
